@@ -11,7 +11,7 @@ int main()
 {
     int arr[size],i,n;
 
-    printf ("\n Enter the number of elements in the array:-");
+    printf ("\n Entr the number of elements in the array:-");
     scanf ("%d",&n);
 
     printf ("\n Enter the elements of the array:-");
