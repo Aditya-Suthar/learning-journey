@@ -11,7 +11,7 @@ void display();
 
 int main()
 {
-    enqueue(10);  /* INSERTING ELEMENTS INSIDE THE CIRCULAR */
+    enqueue(10); 
     enqueue(20);
     enqueue(30);
     enqueue(40);
@@ -32,14 +32,12 @@ int main()
 
 void enqueue(int data)
 {
-    // Overflow condition
     if ((rear + 1) % MAX == front)
     {
         printf("\nQueue Overflow");
         return;
     }
 
-    // First element insertion
     if (front == -1)
     {
         front = rear = 0;
@@ -62,7 +60,6 @@ int dequeue()
 
     int value = queue[front];
 
-    // If only one element
     if (front == rear)
     {
         front = rear = -1;

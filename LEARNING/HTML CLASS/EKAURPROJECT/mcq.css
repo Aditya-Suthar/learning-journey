@@ -1,0 +1,21 @@
+body
+{
+    background-color: sandybrown;
+}
+
+h1
+{
+    text-align: center;
+    color:black;
+}
+
+h2
+{
+    text-align:left;
+    color:black;
+}
+
+.question
+{
+    font-weight: bold;
+}
