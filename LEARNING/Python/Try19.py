@@ -1,3 +1,4 @@
+
 s = input("Enter string: ")
 
 has_letter = False
