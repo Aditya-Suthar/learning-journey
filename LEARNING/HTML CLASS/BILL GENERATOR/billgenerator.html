@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bill Generator</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    input {
+      padding: 8px;
+      margin: 5px;
+    }
+    button {
+      padding: 8px 12px;
+      margin: 5px;
+      cursor: pointer;
+    }
+    table {
+      width: 100%;
+      margin-top: 15px;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    .total {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>🧾 Bill Generator</h2>
+
+  <input type="text" id="item" placeholder="Item Name">
+  <input type="number" id="qty" placeholder="Quantity">
+  <input type="number" id="price" placeholder="Price">
+  <button onclick="addItem()">Add Item</button>
+
+  <table id="billTable">
+    <tr>
+      <th>Item</th>
+      <th>Qty</th>
+      <th>Price</th>
+      <th>Total</th>
+      <th>Action</th>
+    </tr>
+  </table>
+
+  <br>
+  GST: <input type="number" id="gst" value="0"> %
+
+  <div class="total" id="grandTotal">Total: ₹0</div>
+
+  <button onclick="printBill()">🖨️ Print</button>
+</div>
+
+<script>
+  let totalAmount = 0;
+
+  function addItem() {
+    const item = document.getElementById("item").value;
+    const qty = parseInt(document.getElementById("qty").value);
+    const price = parseFloat(document.getElementById("price").value);
+
+    if (!item || !qty || !price) {
+      alert("Please fill all fields");
+      return;
+    }
+
+    const total = qty * price;
+    totalAmount += total;
+
+    const table = document.getElementById("billTable");
+    const row = table.insertRow();
+
+    row.innerHTML = `
+      <td>${item}</td>
+      <td>${qty}</td>
+      <td>₹${price}</td>
+      <td>₹${total}</td>
+      <td><button onclick="removeRow(this, ${total})">❌</button></td>
+    `;
+
+    updateTotal();
+
+    document.getElementById("item").value = "";
+    document.getElementById("qty").value = "";
+    document.getElementById("price").value = "";
+  }
+
+  function removeRow(btn, value) {
+    const row = btn.parentNode.parentNode;
+    row.remove();
+    totalAmount -= value;
+    updateTotal();
+  }
+
+  function updateTotal() {
+    const gst = parseFloat(document.getElementById("gst").value) || 0;
+    const gstAmount = totalAmount * (gst / 100);
+    const finalTotal = totalAmount + gstAmount;
+
+    document.getElementById("grandTotal").innerText =
+      "Total: ₹" + finalTotal.toFixed(2);
+  }
+
+  function printBill() {
+    window.print();
+  }
+</script>
+
+</body>
+</html>

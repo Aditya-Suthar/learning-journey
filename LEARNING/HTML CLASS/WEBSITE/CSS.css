@@ -1,96 +1,86 @@
-body 
-{
-    background-size: cover; 
+/* BODY */
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: "Bitcount Single", system-ui;
+
+    /* Gradient + Image together */
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.95) 0%,
+            rgba(0, 0, 0, 0.9) 30%,
+            rgba(78, 78, 78, 0.7) 50%,
+            rgba(255, 255, 255, 0.9) 100%
+        ),
+        url("IMAGEBACKGROUND.png");
+
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image:url("IMAGEBACKGROUND.png");
-    margin: 0;
-    min-height: 100vh; /* */
-    background: linear-gradient(
-        to bottom,
-        #000000 0%,      
-        #000000 30%,     
-        #4e4e4e 45%,     
-        #8b8b8b 60%,     
-        #b1b1b1 75%,     
-        #ffffff 100%    
-    );
 }
 
-.bn 
-{
-    display: grid;
+
+/* BUTTON */
+.bn {
+    display: flex;
     justify-content: center;
+    align-items: center;
 
+    width: 140px;
+    height: 45px;
 
-    width: 150px;        /* fixed width */
-    height: 50px;        /* fixed height */
-  
     font-family: "Bitcount Single", system-ui;
-    font-optical-sizing: auto;
-    font-weight: 359;
-    font-style: normal;
-    font-variation-settings:
-    "slnt" 0,
-    "CRSV" 0,
-    "ELSH" 0,
-    "ELXP" 0;
+    font-weight: 400;
 
-    background-color: #000000;
-    color: #ffffff;
+    background-color: transparent;
+    color: white;
     cursor: pointer;
-    font-size: 16px;
-    border-radius : 6px;
-    padding-top: 20px ;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 30px ;
+    font-size: 14px;
+
+    border-radius: 6px;
+    border: 1px solid white;
+
+    transition: all 0.3s ease;
+}
+
+.bn:hover {
+    background-color: white;
+    color: black;
+}
 
 
-} 
-
-.bn:hover{
-
-        font-family: "Bitcount Single", system-ui;
-        font-optical-sizing: auto;
-        font-weight: 359;
-        font-style: normal;
-        font-variation-settings:
-        "slnt" 0,
-        "CRSV" 0,
-        "ELSH" 0,
-        "ELXP" 0;
-
-        background-color: #ffffff;
-        color :#000000;
-        padding-top: 20px ;
-        padding-right: 0px;
-        padding-left: 0px;
-        padding-bottom: 30px ;
-    }
-
+/* HEADER */
 .header {
     display: flex;
     align-items: center;
-    padding: 30px 60px;
+    justify-content: space-between;
+
+    padding: 20px 50px;
+
+    background: rgba(0, 0, 0, 0.7);
 }
 
+
+/* NAV */
+.nav-left,
 .nav-right {
     display: flex;
     gap: 20px;
     flex: 1;
-    justify-content: flex-end;
 }
 
 .nav-left {
-    display: flex;
-    gap: 20px;
-    flex: 1;
     justify-content: flex-start;
 }
 
-.logo {
-    height: 160px;
-    width: auto;
+.nav-right {
+    justify-content: flex-end;
 }
 
+
+/* LOGO */
+.logo {
+    height: 80px;
+    width: auto;
+}
