@@ -8,7 +8,7 @@ struct Node {
 
 struct Node* head = NULL;
 
-// 🔹 Create new node
+
 struct Node* createNode(int data) {
     struct Node* newnode = (struct Node*)malloc(sizeof(struct Node));
     newnode->data = data;
@@ -16,7 +16,7 @@ struct Node* createNode(int data) {
     return newnode;
 }
 
-// 🔹 Insert at position
+
 void insertAtPosition(int data, int pos) {
     struct Node* newnode = createNode(data);
 
@@ -40,7 +40,7 @@ void insertAtPosition(int data, int pos) {
     temp->next = newnode;
 }
 
-// 🔹 Delete at position
+
 void deleteAtPosition(int pos) {
     if (head == NULL) {
         printf("List is empty\n");
@@ -69,7 +69,7 @@ void deleteAtPosition(int pos) {
     free(del);
 }
 
-// 🔹 Insert after given element
+
 void insertAfterElement(int key, int data) {
     struct Node* temp = head;
 
@@ -87,7 +87,7 @@ void insertAfterElement(int key, int data) {
     temp->next = newnode;
 }
 
-// 🔹 Delete after given element
+
 void deleteAfterElement(int key) {
     struct Node* temp = head;
 
@@ -105,7 +105,7 @@ void deleteAfterElement(int key) {
     free(del);
 }
 
-// 🔹 Traverse
+
 void traverse() {
     struct Node* temp = head;
 
@@ -122,7 +122,7 @@ void traverse() {
     printf("NULL\n");
 }
 
-// 🔹 Search
+
 void search(int key) {
     struct Node* temp = head;
     int pos = 1;
@@ -139,7 +139,6 @@ void search(int key) {
     printf("Element not found\n");
 }
 
-// 🔹 Main Menu
 int main() {
     int choice, data, pos, key;
 
