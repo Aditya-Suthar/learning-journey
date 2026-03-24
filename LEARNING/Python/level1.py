@@ -1,7 +1,4 @@
 #include <stdio.h>
-
-#define MAX 1000   // assuming elements range from 0 to 999
-
 void firstNonRepeating(int arr[], int n)
 {
     int freq[MAX] = {0};
@@ -25,7 +22,7 @@ void firstNonRepeating(int arr[], int n)
     printf("No non-repeating element found\n");
 }
 
-int main()
+int 
 {
     int n;
     printf("Enter number of elements: ");
