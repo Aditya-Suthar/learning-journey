@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Login</title>
+</head>
+
+<body>
+
+    <h2>Login Page</h2>
+
+    <div id="loginBox">
+        <label>Username:</label><br>
+        <input type="text" id="username"><br><br>
+
+        <label>Password:</label><br>
+        <input type="password" id="password"><br><br>
+
+        <button onclick="login()">Login</button>
+
+        <p id="msg"></p>
+    </div>
+
+    <div id="welcomeBox" style="display:none;">
+        <h3 id="welcomeText"></h3>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+<script>
+    
+    function setCookie(name, value, days) {
+        let date = new Date();
+        date.setTime(date.getTime() + (days*24*60*60*1000));
+        let expires = "expires=" + date.toUTCString();
+        document.cookie = name + "=" + value + ";" + expires + ";path=/";
+    }
+
+    function getCookie(name) {
+        let cname = name + "=";
+        let decoded = decodeURIComponent(document.cookie);
+        let arr = decoded.split(';');
+
+        for (let i = 0; i < arr.length; i++) {
+            let c = arr[i].trim();
+            if (c.indexOf(cname) == 0) {
+                return c.substring(cname.length, c.length);
+            }
+        }
+        return "";
+    }
+
+    function deleteCookie(name) {
+        document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    }
+
+    function login() {
+        let user = document.getElementById("username").value;
+        let pass = document.getElementById("password").value;
+
+        if (user == "admin" && pass == "1234") {
+            setCookie("user", user, 7);
+            showWelcome(user);
+        } else {
+            document.getElementById("msg").innerText = "Wrong username or password";
+        }
+    }
+
+    function showWelcome(user) {
+        document.getElementById("loginBox").style.display = "none";
+        document.getElementById("welcomeBox").style.display = "block";
+        document.getElementById("welcomeText").innerText = "Welcome " + user;
+    }
+
+    function logout() {
+        deleteCookie("user");
+        document.getElementById("loginBox").style.display = "block";
+        document.getElementById("welcomeBox").style.display = "none";
+    }
+
+    window.onload = function() {
+        let user = getCookie("user");
+        if (user != "") {
+            showWelcome(user);
+        }
+    }
+</script>
+
+</body>
+</html>
