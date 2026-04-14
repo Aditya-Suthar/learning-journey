@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>EVENTS EXAMPLE</h2>
+
+<button onclick="handleClick()">Click Me</button>
+
+<br><br>
+
+<p onmouseover="handleMouse()">Hover over me</p>
+
+<br><br>
+
+<input type="text" onkeyup="handleKey()" id="inputBox" placeholder="Type something">
+
+<p id="textOutput"></p>
+
+<br><br>
+
+<form onsubmit="return handleSubmit()">
+    <input type="text" id="name" placeholder="Enter name">
+    <button type="submit">Submit</button>
+</form>
+
+<p id="formOutput"></p>
+
+<script>
+
+function handleClick() {
+    alert("Button Clicked!");
+}
+
+function handleMouse() {
+    alert("Mouse is over the text!");
+}
+
+function handleKey() {
+    let text = document.getElementById("inputBox").value;
+    document.getElementById("textOutput").innerHTML = text;
+}
+
+function handleSubmit() {
+    let name = document.getElementById("name").value;
+
+    if (name == "") {
+        alert("Enter name first");
+        return false;
+    }
+
+    document.getElementById("formOutput").innerHTML = "Hello " + name;
+    return false; 
+}
+
+</script>
+
+</body>
+</html>
