@@ -8,11 +8,11 @@ for i in range (n):
 
 search = int(input("ENTER NUMBER TO BE SERACHED"))
 
-for i in range(n):
+for i in lst:
     if (search == i):
         print("FOUND")
     else:
         print("NOT FOUND")
 
-sorted.lst()
+lst.sort()
 print(lst)
