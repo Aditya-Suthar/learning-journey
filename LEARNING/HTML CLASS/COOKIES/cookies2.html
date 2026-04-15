@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> COOKIE WITH EXPIRY</h2>
+
+    <button onclick = "setCookie()"> Set Cookie </button>
+    <button onclick = "getCookie()"> Get Cookie </button>
+    <button onclick = "clearOutput()"> Clear </button>
+
+    <p id = "output"></p>
+
+    <script>
+        function setCookie()
+        {
+            let expiryDate = new Date();
+            expiryDate.setTime(expiryDate.getTime() + (24*60*60*1000));
+
+            document.cookie = "username = ADITYA; expires = " + expiryDate.toUTCString();
+
+            alert("Cookie Set for 1 day!");
+        }
+
+        function getCookie()
+        {
+            let cookies = document.cookie;
+
+            if (cookies = ""){
+                document.getElementById("output").innerHTML = "No cookies found"
+            }
+
+            else
+            {
+                document.getElementById("output").innerHTML = cookies;
+            }
+
+        }
+
+        function clearOutput()
+        {
+            doucment.getElementById("output").innerHTML = "";
+        }
+
+    </script>
+</body>
+</html>

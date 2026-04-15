@@ -7,7 +7,6 @@ struct node {
     struct node *right;
 };
 
-// Create node
 struct node* createNode(int value)
 {
     struct node *newnode = (struct node*)malloc(sizeof(struct node));
@@ -33,7 +32,6 @@ struct node* insert(struct node *root, int value)
     return root;
 }
 
-// Inorder traversal
 void inorder(struct node *root)
 {
     if (root == NULL)

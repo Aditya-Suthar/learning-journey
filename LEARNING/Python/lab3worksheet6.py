@@ -1,7 +1,6 @@
 s1 = input("Enter the string:")
 s2 = input("Enter the substring:")
 
-indices = []
 start = 0
 count = 0
 
