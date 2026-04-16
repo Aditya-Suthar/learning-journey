@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+
+<form>
+    Name:
+    <input type="text" pattern="^[A-Z][a-zA-Z]* [a-zA-Z]+$" required>
+    <br><br>
+
+    Email:
+    <input type="email" pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9]+\.[A-Za-z]{2,3}$" required>
+    <br><br>
+
+    Password:
+    <input type="password" pattern="^(?=.*[._#!]).{8,}$" required>
+    <br><br>
+
+    Age:
+    <input type="text" pattern="^(1[89]|[2-5][0-9]|60)$" required>
+    <br><br>
+
+    Mobile:
+    <input type="text" pattern="^[6-9][0-9]{9}$" required>
+    <br><br>
+
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
