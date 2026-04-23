@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/file/720p30/partial_movie_files/Shapes3D/2180374082_2710119807_223132457.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/file/720p30/partial_movie_files/Shapes3D/2342301750_1913091092_1763837755.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/file/720p30/partial_movie_files/Shapes3D/2342301750_573940151_3779419355.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/file/720p30/partial_movie_files/Shapes3D/2342301750_1518218798_3849287425.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/file/720p30/partial_movie_files/Shapes3D/2342301750_3515533520_4202852566.mp4'
