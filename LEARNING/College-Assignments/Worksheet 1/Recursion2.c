@@ -1,14 +1,15 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int GetN(int n,int i);
 int FunN();
-int main ()
 
-{
+int main ()
+{ 
     int i = 1;
     int n = FunN();
     GetN(n,i);
-    
+    return 0;
 }
 
 int FunN()

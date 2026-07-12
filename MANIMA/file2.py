@@ -1,0 +1,20 @@
+from manim import *
+
+class Testing(Scene):
+    def construct(self):
+
+        name = Tex("Amedee").to_edge(UL, buff=0.5)
+        sq = Square(side_length = 0.5, fill_color = BLUE,fill_opacity = 0.5) 
+        tri = Triangle().scale(0.6).to_edge(DR)
+
+        self.play(Write(name))
+        self.play(DrawBorderThenFill(sq), run_time = 2)
+        self.play(Create(tri))
+
+        self.play(name.animate.to_edge(UR), run_time = 2)
+        self.play(sq.animate.scale(2), tri.animate.to_edge(DL), run_time = 3)
+        self.wait()
+         
+
+
+

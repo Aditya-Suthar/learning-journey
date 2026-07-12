@@ -1,0 +1,6 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/practice/media/videos/file/720p30/partial_movie_files/Project1/1987512680_448495530_223132457.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/practice/media/videos/file/720p30/partial_movie_files/Project1/2538612922_3197103083_1855014195.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/practice/media/videos/file/720p30/partial_movie_files/Project1/2538612922_2021785995_2676549201.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/practice/media/videos/file/720p30/partial_movie_files/Project1/2538612922_1381075729_160837498.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/practice/media/videos/file/720p30/partial_movie_files/Project1/2538612922_1754310298_3830417380.mp4'

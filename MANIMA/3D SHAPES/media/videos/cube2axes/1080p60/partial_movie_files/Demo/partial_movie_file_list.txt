@@ -1,0 +1,12 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/cube2axes/1080p60/partial_movie_files/Demo/3841287761_3873463131_223132457.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/cube2axes/1080p60/partial_movie_files/Demo/2982650044_4101645350_1970586369.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/cube2axes/1080p60/partial_movie_files/Demo/2982650044_3433188154_2787024525.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/cube2axes/1080p60/partial_movie_files/Demo/2982650044_2067196756_489633809.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/cube2axes/1080p60/partial_movie_files/Demo/2982650044_1660129489_4029202252.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/cube2axes/1080p60/partial_movie_files/Demo/2982650044_2968904986_842264222.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/cube2axes/1080p60/partial_movie_files/Demo/2982650044_2175493488_2970134879.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/cube2axes/1080p60/partial_movie_files/Demo/2982650044_1212753492_1101589929.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/cube2axes/1080p60/partial_movie_files/Demo/2982650044_2067196756_932698222.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/cube2axes/1080p60/partial_movie_files/Demo/2982650044_3417161576_3538081201.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/MANIMA/3D SHAPES/media/videos/cube2axes/1080p60/partial_movie_files/Demo/2982650044_2968904986_3829540155.mp4'

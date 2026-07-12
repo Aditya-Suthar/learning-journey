@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/PROJECT_MANIMA/media/videos/clip1/720p30/partial_movie_files/A/1987512680_47399741_223132457.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/PROJECT_MANIMA/media/videos/clip1/720p30/partial_movie_files/A/2538612922_1338983982_2972782585.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/PROJECT_MANIMA/media/videos/clip1/720p30/partial_movie_files/A/2538612922_3069357771_92317378.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/PROJECT_MANIMA/media/videos/clip1/720p30/partial_movie_files/A/2538612922_2579044680_2798481666.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/PROJECT_MANIMA/media/videos/clip1/720p30/partial_movie_files/A/2538612922_1310128329_2248038810.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/PROJECT_MANIMA/media/videos/clip1/720p30/partial_movie_files/A/2538612922_346349495_3431522645.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/PROJECT_MANIMA/media/videos/clip1/720p30/partial_movie_files/A/2538612922_3254706657_3208013275.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/PROJECT_MANIMA/media/videos/clip1/720p30/partial_movie_files/A/2538612922_3201849554_260816736.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/PROJECT_MANIMA/media/videos/clip1/720p30/partial_movie_files/A/2538612922_811214118_2755442820.mp4'
+file 'file:C:/Users/s9416/OneDrive/Desktop/DESKTOP/New folder/PROJECT_MANIMA/media/videos/clip1/720p30/partial_movie_files/A/2538612922_1754310298_210259938.mp4'
